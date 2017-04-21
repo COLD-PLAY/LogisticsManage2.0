@@ -1,5 +1,6 @@
 package com;
 
+import com.sun.org.apache.bcel.internal.generic.GETFIELD;
 import com.sun.org.apache.regexp.internal.RE;
 
 import javax.swing.plaf.nimbus.State;
@@ -23,15 +24,17 @@ public class user {
     private Connection conn = null;
     private Statement stmt = null;
 
-    public String sql = "";
+    private String sql = "";
+    private ResultSet rs = null;
 
-//    public user(String us, String pa, String ph, String ad) {
-//        this.username = us;
-//        this.password = pa;
-//        this.phonenum = ph;
-//        this.address = ad;
-//    }
+    public user(String us, String pa, String ph, String ad) {
+        this.username = us;
+        this.password = pa;
+        this.phonenum = ph;
+        this.address = ad;
+    }
 
+    // 构造方法
     public user(String us) {
         this.username = us;
         GetInSQL();
@@ -122,7 +125,7 @@ public class user {
         return true;
     }
 
-    // 升级用户信息
+    // 更新用户信息
     public boolean UpdateToSQL() {
         try {
             conn = GetConn();
@@ -162,5 +165,137 @@ public class user {
         }
 
         return true;
+    }
+
+    // 用户查询所有的订单
+    public ResultSet GetOrders() {
+        try {
+            conn = GetConn();
+            if (conn != null)
+                stmt = conn.createStatement();
+            else return null;
+
+            // 管理员用户查看所有的订单
+            if (this.username.compareTo("root") == 0) {
+                sql = "SELECT * FROM orders;";
+                rs = stmt.executeQuery(sql);
+            }
+            else {
+                sql = "SELECT * FROM orders WHERE fromuser='" + this.username + "' OR touser='" + this.username + "';";
+                rs = stmt.executeQuery(sql);
+            }
+
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return rs;
+    }
+
+    // 管理员相关操作
+
+    // 管理员删除订单
+    public boolean DeleteOrder(String or) {
+        try {
+            conn = GetConn();
+            if (conn != null)
+                stmt = conn.createStatement();
+            else return false;
+
+            sql = "SELECT * FROM orders WHERE ordernum='" + or + "';";
+            rs = stmt.executeQuery(sql);
+
+            // 如果没有此订单
+            if (!rs.next()) return false;
+
+            sql = "DELETE FROM orders WHERE ordernum='" + or + "';";
+            stmt.execute(sql);
+
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    // 管理员删除用户
+    public boolean DeleteUser(String us) {
+        try {
+            conn = GetConn();
+            if (conn != null)
+                stmt = conn.createStatement();
+            else return false;
+
+            sql = "SELECT * FROM user WHERE username='" + us + "';";
+            rs = stmt.executeQuery(sql);
+
+            // 如果没有此用户
+            if (!rs.next()) return false;
+
+            sql = "DELETE FROM user WHERE username='" + us + "';";
+            stmt.execute(sql);
+
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    // 管理员更新订单
+    public boolean UpdateOrder(String or, String st) {
+        try {
+            conn = GetConn();
+            if (conn != null)
+                stmt = conn.createStatement();
+            else return false;
+
+            sql = "SELECT * FROM orders WHERE ordernum='" + or + "';";
+            rs = stmt.executeQuery(sql);
+
+            // 如果没有此订单
+            if (!rs.next()) return false;
+
+            sql = "UPDATE orders SET status='" + st + "' WHERE ordernum='" + or + "';";
+            stmt.execute(sql);
+
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    // 管理员查看用户
+    public ResultSet GetUsers() {
+        try {
+            conn = GetConn();
+            if (conn != null)
+                stmt = conn.createStatement();
+            else return null;
+
+            sql = "SELECT * FROM user;";
+            rs = stmt.executeQuery(sql);
+
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return rs;
     }
 }
