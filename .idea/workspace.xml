@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a1f21c3-b90d-430c-bd34-12d88490b03a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/user.java" afterPath="$PROJECT_DIR$/src/com/user.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jspTest_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jspTest_war_exploded/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,25 +20,24 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="-315">
+              <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#user#0;class#user#0" expanded="false" />
                 <element signature="method#user#1;class#user#0" expanded="false" />
                 <element signature="method#GetConn#0;class#user#0" expanded="false" />
                 <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
-                <element signature="method#GetInSQL#0;class#user#0" expanded="false" />
                 <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
                 <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
                 <element signature="method#GetOrders#0;class#user#0" expanded="false" />
@@ -69,6 +70,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="order.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="65" column="42" lean-forward="false" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#order#0;class#order#0" expanded="false" />
+                <marker date="1493002532891" expanded="true" signature="1821:1841" ph="SELECT * FRO... orders" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -91,6 +106,7 @@
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/user.java" />
+        <option value="$PROJECT_DIR$/src/com/order.java" />
       </list>
     </option>
   </component>
@@ -108,9 +124,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-6" />
-    <option name="width" value="1920" />
-    <option name="height" value="1086" />
+    <option name="x" value="-1" />
+    <option name="y" value="-11" />
+    <option name="width" value="1922" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -127,8 +144,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,9 +166,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogisticManage2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogisticManage2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogisticManage2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LogisticManage2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,14 +676,18 @@
       <updated>1492703763893</updated>
       <workItem from="1492703768348" duration="7684000" />
       <workItem from="1492741400183" duration="4708000" />
+      <workItem from="1492772346635" duration="2007000" />
+      <workItem from="1492820919961" duration="182000" />
+      <workItem from="1493001364224" duration="190000" />
+      <workItem from="1493001671531" duration="2451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12392000" />
+    <option name="totallyTimeSpent" value="17222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-6" width="1920" height="1086" extended-state="6" />
+    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -657,7 +710,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33716077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2588047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2710779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -678,7 +731,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -689,23 +742,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2060">
-          <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+        <state relative-caret-position="220">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#user#0;class#user#0" expanded="false" />
             <element signature="method#user#1;class#user#0" expanded="false" />
             <element signature="method#GetConn#0;class#user#0" expanded="false" />
             <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
-            <element signature="method#GetInSQL#0;class#user#0" expanded="false" />
             <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
             <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
             <element signature="method#GetOrders#0;class#user#0" expanded="false" />
@@ -747,15 +799,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#user#0;class#user#0" expanded="false" />
             <element signature="method#user#1;class#user#0" expanded="false" />
             <element signature="method#GetConn#0;class#user#0" expanded="false" />
             <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
-            <element signature="method#GetInSQL#0;class#user#0" expanded="false" />
             <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
             <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
             <element signature="method#GetOrders#0;class#user#0" expanded="false" />
@@ -783,6 +834,173 @@
             <marker date="1492745557820" expanded="true" signature="6618:6666" ph="SELECT * FRO... orders" />
             <marker date="1492745557820" expanded="true" signature="6797:6862" ph="UPDATE order... " />
             <marker date="1492745557820" expanded="true" signature="7300:7318" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#user#0;class#user#0" expanded="false" />
+            <element signature="method#user#1;class#user#0" expanded="false" />
+            <element signature="method#GetConn#0;class#user#0" expanded="false" />
+            <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
+            <element signature="method#GetOrders#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteOrder#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteUser#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateOrder#0;class#user#0" expanded="false" />
+            <element signature="method#GetUsers#0;class#user#0" expanded="false" />
+            <marker date="1492745557820" expanded="true" signature="1855:1886" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1890" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1912" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="2061:2182" ph="INSERT INTO user... " />
+            <marker date="1492745557820" expanded="true" signature="2621:2678" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="3383:3541" ph="UPDATE FROM " />
+            <marker date="1492745557820" expanded="true" signature="3977:4027" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="4556:4576" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="4681:4774" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5299" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5301" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5312" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5443:5489" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="5937:5972" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="5937:5983" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="6114:6147" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6114:6158" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6618:6666" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="6797:6862" ph="UPDATE order... " />
+            <marker date="1492745557820" expanded="true" signature="7300:7318" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#user#0;class#user#0" expanded="false" />
+            <element signature="method#user#1;class#user#0" expanded="false" />
+            <element signature="method#GetConn#0;class#user#0" expanded="false" />
+            <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
+            <element signature="method#GetOrders#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteOrder#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteUser#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateOrder#0;class#user#0" expanded="false" />
+            <element signature="method#GetUsers#0;class#user#0" expanded="false" />
+            <marker date="1492745557820" expanded="true" signature="1855:1886" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1890" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1912" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="2061:2182" ph="INSERT INTO user... " />
+            <marker date="1492745557820" expanded="true" signature="2621:2678" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="3383:3541" ph="UPDATE FROM " />
+            <marker date="1492745557820" expanded="true" signature="3977:4027" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="4556:4576" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="4681:4774" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5299" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5301" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5312" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5443:5489" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="5937:5972" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="5937:5983" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="6114:6147" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6114:6158" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6618:6666" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="6797:6862" ph="UPDATE order... " />
+            <marker date="1492745557820" expanded="true" signature="7300:7318" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#user#0;class#user#0" expanded="false" />
+            <element signature="method#user#1;class#user#0" expanded="false" />
+            <element signature="method#GetConn#0;class#user#0" expanded="false" />
+            <element signature="method#AddToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateToSQL#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteInSQL#0;class#user#0" expanded="false" />
+            <element signature="method#GetOrders#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteOrder#0;class#user#0" expanded="false" />
+            <element signature="method#DeleteUser#0;class#user#0" expanded="false" />
+            <element signature="method#UpdateOrder#0;class#user#0" expanded="false" />
+            <element signature="method#GetUsers#0;class#user#0" expanded="false" />
+            <marker date="1492745557820" expanded="true" signature="1855:1886" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1890" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="1855:1912" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="2061:2182" ph="INSERT INTO user... " />
+            <marker date="1492745557820" expanded="true" signature="2621:2678" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="3383:3541" ph="UPDATE FROM " />
+            <marker date="1492745557820" expanded="true" signature="3977:4027" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="4556:4576" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="4681:4774" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5299" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5301" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5264:5312" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="5443:5489" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="5937:5972" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="5937:5983" ph="SELECT * FRO... user" />
+            <marker date="1492745557820" expanded="true" signature="6114:6147" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6114:6158" ph="DELETE FROM " />
+            <marker date="1492745557820" expanded="true" signature="6618:6666" ph="SELECT * FRO... orders" />
+            <marker date="1492745557820" expanded="true" signature="6797:6862" ph="UPDATE order... " />
+            <marker date="1492745557820" expanded="true" signature="7300:7318" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="65" column="42" lean-forward="false" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#order#0;class#order#0" expanded="false" />
+            <marker date="1493002532891" expanded="true" signature="1821:1841" ph="SELECT * FRO... orders" />
           </folding>
         </state>
       </provider>
